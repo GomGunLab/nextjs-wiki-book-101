@@ -1,10 +1,10 @@
-import { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
 
-import Example from "@/example/Example";
+import Example from '@/example/Example';
 
 const meta: Meta<typeof Example> = {
-  title: "Example",
+  title: 'Example',
   component: Example,
 };
 
