@@ -1,17 +1,17 @@
-import { ApiContext, User } from '@/types/data';
-import { fetcher } from '@/utils';
+import { ApiContext, User } from '@/types/data'
+import { fetcher } from '@/utils'
 
 export type SigninParams = {
   /**
    * username
    */
-  username: string;
+  username: string
 
   /**
    * password
    */
-  password: string;
-};
+  password: string
+}
 
 const signin = async (
   context: ApiContext,
@@ -27,7 +27,7 @@ const signin = async (
       },
       body: JSON.stringify(params),
     },
-  );
-};
+  )
+}
 
-export default signin;
+export default signin

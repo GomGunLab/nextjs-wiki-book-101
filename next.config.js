@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   compiler: (() => {
     let compilerConfig = {
-      styledComponent: true,
+      styledComponents: true,
     };
 
     if (process.env.NODE_ENV === 'production') {

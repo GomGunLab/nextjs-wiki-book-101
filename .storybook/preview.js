@@ -1,7 +1,7 @@
-import { withThemeFromJSXProvider } from '@storybook/addon-styling'
-import { ThemeProvider } from 'styled-components'
-import { theme } from '../src/themes'
-import GlobalStyles from '../src/styles/GlobalStyle'
+import { withThemeFromJSXProvider } from '@storybook/addon-styling';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../src/themes';
+import GlobalStyles from '../src/styles/GlobalStyle';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -14,14 +14,12 @@ export const parameters = {
     },
   },
   staticDir: ['public'],
-}
+};
 
 export const decorators = [
   withThemeFromJSXProvider({
-    themes: {
-      default: theme,
-    },
+    themes: { default: theme },
     Provider: ThemeProvider,
     GlobalStyles: GlobalStyles,
   }),
-]
+];

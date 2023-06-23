@@ -1,12 +1,12 @@
-import { ApiContext, User } from '@/types/data';
-import { fetcher } from '@/utils';
+import { ApiContext, User } from '@/types/data'
+import { fetcher } from '@/utils'
 
 export type GetUserParams = {
   /**
    * userId
    */
-  id: number;
-};
+  id: number
+}
 
 const getUser = async (
   context: ApiContext,
@@ -20,7 +20,7 @@ const getUser = async (
         'Content-Type': 'application/json',
       },
     },
-  );
-};
+  )
+}
 
-export default getUser;
+export default getUser
