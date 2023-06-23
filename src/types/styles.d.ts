@@ -21,7 +21,7 @@ type Responsive<T> = T | ResponsiveProps<T>;
 type selfPosition =
   | 'center'
   | 'end'
-  | ' flex-end'
+  | 'flex-end'
   | 'flex-start'
   | 'self-end'
   | 'self-start'
@@ -42,7 +42,7 @@ type CSSPropertyGlobals =
   | 'revert'
   | 'unset';
 
-export type CssPropertyAlignItems =
+export type CSSPropertyAlignItems =
   | CSSPropertyGlobals
   | selfPosition
   | 'baseline'
@@ -50,7 +50,7 @@ export type CssPropertyAlignItems =
   | 'stretch'
   | (string & {});
 
-export type CssPropertyAlignCentent =
+export type CSSPropertyAlignCentent =
   | CSSPropertyGlobals
   | ContentDistribution
   | 'center'
